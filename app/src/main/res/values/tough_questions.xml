@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tough_ques">
+        <item>There are four Java classes related to the use of sensors on the Android platform. List them and explain the purpose of each.
+</item>
+        <item>What is a ContentProvider and what is it typically used for?</item>
+        <item>Under what condition could the code sample below crash your application? How would you modify the code to avoid this potential problem? Explain your answer.</item>
+        <item>The last callback in the lifecycle of an activity is onDestroy(). The system calls this method on your activity as the final signal that your activity instance is being completely removed from the system memory. Usually, the system will call onPause() and onStop() before calling onDestroy(). Describe a scenario, though, where onPause() and onStop() would not be invoked.</item>
+        <item>Which of the code snippets below is the correct way to check if a Compass sensor is present on the system? Explain your answer.
+
+Answer 1:
+
+    PackageManager m = getPackageManager();
+    if (!m.hasSystemFeature(PackageManager.FEATURE_SENSOR_COMPASS)) {
+        // This device does not have a compass, turn off the compass feature
+    }
+
+Answer 2:
+
+    SensorManager m = getSensorManager();
+    if (!m.hasSystemFeature(SensorManager.FEATURE_SENSOR_COMPASS)) {
+        // This device does not have a compass, turn off the compass feature
+    }
+
+Answer 3:
+
+    Sensor s = getSensor();
+    if (!s.hasSystemFeature(Sensor.FEATURE_SENSOR_COMPASS)) {
+        // This device does not have a compass, turn off the compass feature
+    }
+
+</item>
+        <item>Describe three common use cases for using an Intent.</item>
+        <item>Suppose that you are starting a service in an Activity as follows:
+
+Intent service = new Intent(context, MyService.class);
+startService(service);
+
+where MyService accesses a remote server via an Internet connection.
+
+If the Activity is showing an animation that indicates some kind of progress, what issue might you encounter and how could you address it?
+</item>
+        <item>Normally, in the process of carrying out a screen reorientation, the Android platform tears down the foreground activity and recreates it, restoring each of the view values in the activity’s layout.
+
+In an app you’re working on, you notice that a view’s value is not being restored after screen reorientation. What could be a likely cause of the problem that you should verify, at a minimum, about that particular view?
+</item>
+        <item>What is DDMS? Describe some of its capabilities.</item>
+        <item>What is the relationship between the life cycle of an AsyncTask and an Activity? What problems can this result in? How can these problems be avoided?</item>
+        <item>What is an Intent? Can it be used to provide data to a ContentProvider? Why or why not?</item>
+        <item>What is the difference between a fragment and an activity? Explain the relationship between the two.</item>
+        <item>What is difference between Serializable and Parcelable ? Which is best approach in Android ?</item>
+        <item>What are “launch modes”? What are the two mechanisms by which they can be defined? What specific types of launch modes are supported?</item>
+        <item>What is the difference between Service and IntentService? How is each used?
+</item>
+        <item>How do you supply construction arguments into a Fragment?
+</item>
+        <item>What is ANR, and why does it happen?
+</item>
+        <item>Which method is called only once in a fragment life cycle?</item>
+        <item>Is it possible to create an activity in Android without a user interface ?</item>
+        <item>What is a broadcast receiver?</item>
+
+
+    </string-array>
+</resources>
